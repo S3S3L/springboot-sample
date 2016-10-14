@@ -59,3 +59,4 @@ classes/artifacts/
 *.diff
 release.properties
 *.releaseBackup
+/.apt_generated/
