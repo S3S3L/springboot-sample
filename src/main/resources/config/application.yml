@@ -1,0 +1,51 @@
+spring:
+  profiles:
+    active: develop
+  main:
+    web-environment: false
+  redis:
+    host: null #host
+    port: 6379 #port
+    password: null #password
+    timeout: 100000
+    database: 1
+    pool:
+      max-active: 300
+      max-idle: 100
+      max-wait: 1000
+      min-idle: 10
+security:
+  basic:
+    enabled: false
+cache:
+  redis:
+    default-expiration: 60
+    use-prefix: true
+    load-remote-caches-on-startup: true
+datasource:
+  driverClassName: null #driverClass
+  url: null #url
+  username: null #username
+  password: null #password
+  jmxEnabled: false
+  testWhileIdle: false
+  validationQuery: SELECT 1
+  testOnBorrow: true
+  testOnReturn: false
+  validationInterval: 30000
+  timeBetweenEvictionRunsMillis: 10000
+  maxActive: 5
+  maxIdle: 2
+  minIdle: 1
+  initialSize: 2
+  maxWait: 60000
+  removeAbandoned: true
+  removeAbandonedTimeout: 60000
+  minEvictableIdleTimeMillis: 60000
+  logAbandoned: true
+  cryptographic: false
+mybatis:
+  config: classpath:config/mybatis/mybatis-config.xml
+  mapperLocations: classpath:config/mybatis/mapper/**/*.xml
+  typeAliasesPackage: com.s3s3l.example.model
+  checkConfigLocation: true
