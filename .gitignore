@@ -60,3 +60,4 @@ classes/artifacts/
 release.properties
 *.releaseBackup
 /.apt_generated/
+.gitconfig
