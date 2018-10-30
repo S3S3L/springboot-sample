@@ -23,7 +23,7 @@ import org.springframework.context.annotation.Configuration;
  * @since    JDK 1.8
  */
 @Configuration
-@MapperScan(basePackages = "com.easybike.aaa.dao")
+@MapperScan(basePackages = "com.test.dao")
 public class MybatisConfiguration {
 
 }
